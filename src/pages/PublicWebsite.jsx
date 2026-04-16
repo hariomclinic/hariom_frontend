@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Phone, Mail, MapPin, MessageCircle, Star, Clock, Award, Heart, Leaf, ChevronDown } from 'lucide-react'
+import doctorImg from '../assets/doctor.jpeg'
 
 /**
  * PublicWebsite - The public-facing clinic website.
@@ -118,7 +119,7 @@ export default function PublicWebsite() {
             {/* Profile image */}
             <div className="w-52 h-52 rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10 mx-auto">
               <img
-                src="/src/assets/doctor.jpeg"
+                src={doctorImg}
                 alt="Dr. Kalpesh Pashte"
                 className="w-full h-full object-cover object-top"
               />
@@ -234,7 +235,7 @@ export default function PublicWebsite() {
             >
               <div className="relative">
                 <img
-                  src="/src/assets/doctor.jpeg"
+                  src={doctorImg}
                   alt="Dr. Kalpesh Pashte"
                   className="w-80 h-80 rounded-3xl object-cover object-top shadow-2xl mx-auto"
                 />
